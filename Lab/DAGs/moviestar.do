@@ -8,8 +8,13 @@ generate talent=rnormal()  // indepedent identical draw from standard normal dis
 
 
 * Creating the collider variable (star) 
-gen score=(beauty+talent) 
-egen c85=pctile(score), p(85)   
+gen score=(talent*beauty) 
+egen c85=pctile(score), p(85)  
+egen c85_beau =  pctile(beauty), p(85) 
+egen c85_tale =  pctile(talent), p(85)  
+
+// gen star = (beauty >= c85_beau & talent >= c85_tale)
+
 gen star=(score>=c85) 
 label variable star "Movie star" 
 
