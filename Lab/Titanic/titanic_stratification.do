@@ -4,7 +4,8 @@ capture log close
 use https://github.com/scunning1975/mixtape/raw/master/titanic.dta, clear
 
 * Step 1: Stratify the data by sex and age
-egen 
+gen c_w = 0
+	replace c_W = 1 if 
 
 * Step 2: Calculate differences in mean survival rate for all four strata
 
