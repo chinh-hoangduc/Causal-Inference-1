@@ -1,4 +1,4 @@
-cd "/Users/scott_cunningham/Documents/Causal-Inference-1/Lab/Matching"
+cd "C:\Users\kingd\Dropbox\Workshops OoU\Mixtape Session\Causal-Inference-1\Lab\Matching"
 
 * Simulation with heterogenous treatment effects, unconfoundedness and OLS estimation
 clear all

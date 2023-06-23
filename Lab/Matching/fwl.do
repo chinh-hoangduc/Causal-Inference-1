@@ -1,4 +1,4 @@
-* ssc install reganat
+// ssc install reganat
 
 * Creating the training data
 clear
@@ -35,7 +35,7 @@ reg earnings treat_squiggle, robust
 
 reg earnings treat
 
-regress earnings treat age gpa
+reg earnings treat age gpa
 
 reganat earnings treat age gpa, dis(treat) biline
 
